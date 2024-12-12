@@ -1,13 +1,20 @@
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddProblemDetails();
 
 builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 app.UseExceptionHandler();
+app.UseSwagger();
+
+app.UseSwaggerUI(
+    options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "OnionArchitecture.ApiService v1");
+    });
 
 if (app.Environment.IsDevelopment())
 {
