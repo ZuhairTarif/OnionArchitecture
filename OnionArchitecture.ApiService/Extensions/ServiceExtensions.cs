@@ -1,4 +1,7 @@
-﻿namespace OnionArchitecture.ApiService.Extensions
+﻿using OnionArchitecture.Contracts;
+using OnionArchitecture.LoggerService;
+
+namespace OnionArchitecture.ApiService.Extensions
 {
     public static class ServiceExtensions
     {
@@ -10,5 +13,7 @@
                         .WithMethods("POST", "GET", "PUT")
                         .AllowAnyHeader());
             });
+        public static void ConfigureLoggerService(this IServiceCollection services) => 
+            services.AddSingleton<ILoggerManager, LoggerManager>();
     }
 }

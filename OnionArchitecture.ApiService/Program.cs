@@ -1,13 +1,16 @@
+using NLog;
 using OnionArchitecture.ApiService.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 builder.Services.AddProblemDetails();
 builder.Services.AddControllers();
 builder.Services.ConfigureCors();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
+builder.Services.ConfigureLoggerService();
 
 var app = builder.Build();
 
