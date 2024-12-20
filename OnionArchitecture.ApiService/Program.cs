@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using NLog;
 using OnionArchitecture.ApiService.Extensions;
+using OnionArchitecture.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +24,7 @@ if (app.Environment.IsDevelopment())
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "OnionArchitecture.ApiService v1");
     });
-    app.MapOpenApi();  
+    app.MapOpenApi();
 }
 
 

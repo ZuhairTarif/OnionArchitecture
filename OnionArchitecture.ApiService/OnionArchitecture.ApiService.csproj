@@ -15,6 +15,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.15" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
   </ItemGroup>
@@ -22,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OnionArchitecture.Contracts\OnionArchitecture.Contracts.csproj" />
     <ProjectReference Include="..\OnionArchitecture.LoggerService\OnionArchitecture.LoggerService.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Repository\OnionArchitecture.Repository.csproj" />
   </ItemGroup>
 
 </Project>

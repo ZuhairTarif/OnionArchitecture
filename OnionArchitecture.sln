@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Contracts
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.LoggerService", "OnionArchitecture.LoggerService\OnionArchitecture.LoggerService.csproj", "{E9927A6F-8E6F-4583-8130-27DDFD7133CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Entities", "OnionArchitecture.Entities\OnionArchitecture.Entities.csproj", "{4626028F-CC0E-4DFB-B936-56C6480994CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Repository", "OnionArchitecture.Repository\OnionArchitecture.Repository.csproj", "{7CD218D6-7B9F-40A4-B884-A4C94909609B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,14 @@ Global
 		{E9927A6F-8E6F-4583-8130-27DDFD7133CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9927A6F-8E6F-4583-8130-27DDFD7133CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9927A6F-8E6F-4583-8130-27DDFD7133CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4626028F-CC0E-4DFB-B936-56C6480994CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4626028F-CC0E-4DFB-B936-56C6480994CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4626028F-CC0E-4DFB-B936-56C6480994CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4626028F-CC0E-4DFB-B936-56C6480994CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD218D6-7B9F-40A4-B884-A4C94909609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD218D6-7B9F-40A4-B884-A4C94909609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD218D6-7B9F-40A4-B884-A4C94909609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD218D6-7B9F-40A4-B884-A4C94909609B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
