@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnionArchitecture.Contracts\OnionArchitecture.Contracts.csproj" />
     <ProjectReference Include="..\OnionArchitecture.Entities\OnionArchitecture.Entities.csproj" />
   </ItemGroup>
 
