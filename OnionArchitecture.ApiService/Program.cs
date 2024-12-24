@@ -1,7 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using NLog;
 using OnionArchitecture.ApiService.Extensions;
-using OnionArchitecture.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +11,8 @@ builder.Services.ConfigureCors();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
 
 var app = builder.Build();
 
